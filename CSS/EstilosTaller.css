@@ -1,0 +1,303 @@
+/*Esto es para poder establecer algún color de fondo y para que la barra de navegación te siga*/
+
+.mi-navbar {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+/*Algún estilo para la barra de navegación fija*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Ajuste del contenido para que no quede oculto detrás de la barra de navegación*/
+
+body {
+    padding-top: 70px; 
+}
+
+.carousel-control-custom .carousel-control-prev-icon,
+        .carousel-control-custom .carousel-control-next-icon {
+            background-color: red; 
+        }
+
+/* Estilo personalizado para los botones de control del carrusel */
+
+.carousel-control-custom .carousel-control-prev-icon,
+.carousel-control-custom .carousel-control-next-icon {
+    background-color: red; 
+}
+
+/* Cambia el color del texto aquí */
+
+.carousel-caption h2 {
+    color: cyan; 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h3 {
+    color: cyan; 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h4 {
+    color: cyan; 
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/**/
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 8000;
+    font-style: normal;
+}
+
+/* Aplicar la fuente Montserrat */
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+        
+h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.transparent-underline {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-style: solid;
+}
+
+.parrafo-h2{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.parrafo-h3{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.parrafo-h4{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto del video de presentación */
+
+.video-container {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Efecto de zoom en las imágenes del carusel */
+
+.carousel-item img {
+    transition: transform 0.5s ease;
+    padding: 0;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    padding: 0;
+}
+
+ /* Bloque rojo separador */
+.red-separator {
+    height: 15px;
+    background-color: red;
+    width: 100%;
+}
+
+
+.extra-video {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Indicadores circulares */
+.carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: background-color  0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    
+}
+
+.carousel-indicators button:hover {
+    background-color: red; 
+}
+
+/* Ajusta el tamaño del contenedor del botón*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Ajusta el grosor de la flecha */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border-top: 5px solid white; 
+    border-right: 5px solid white; 
+}
+
+.carousel-control-prev-icon::after {
+    transform: rotate(-135deg);
+}
+
+.carousel-control-next-icon::after {
+    transform: rotate(45deg);
+}
+
+/* Espacio entre las imágenes y modificación del texto*/
+.image-grid {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 0;
+}
+
+.image-item {
+    text-align: center; 
+    padding: 0;
+}
+
+.image-item img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    padding: 0;
+}
+.image-grid {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+}
+
+.image-item {
+    text-align: center; 
+    font-size: 40px;
+    color: red; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Footer y personalización con CSS */
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: dimgray;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: calc(20% - 10px); /* Ajusta el ancho con margen entre columnas */
+    padding: 0 10px; /* Ajusta el espaciado interno */
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las imágenes se envuelvan si no caben */
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.social-links img {
+    width: 60px; /* Ajusta el tamaño según lo necesario */
+    height: 30px; /* Ajusta el tamaño según lo necesario */
+    background: none; /* Elimina el círculo de fondo */
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start; /* Alinea las imágenes de redes sociales a la izquierda */
+    }
+}

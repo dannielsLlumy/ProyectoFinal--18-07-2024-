@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "",
+        "precio": 45.00,
+        "imagen": "ImagenesTaller/product2.jpg"
+    },
+    {
+        "nombre": "Producto 2",
+        "precio": 189.99,
+        "imagen": "ImagenesTaller/product2.jpg"
+    },
+    {
+        "nombre": "Producto 3",
+        "precio": 225.99,
+        "imagen": "ImagenesTaller/product3.jpg"
+    },
+    {
+        "nombre": "Producto 4",
+        "precio": 325.00,
+        "imagen": "ImagenesTaller/product4.jpg"
+    },
+    {
+        "nombre": "Producto 5",
+        "precio": 750.00,
+        "imagen": "ImagenesTaller/product5.jpg"
+    },
+    {
+        "nombre": "Producto 6",
+        "precio": 325.00,
+        "imagen": "ImagenesTaller/product2.jpg"
+    },
+    {
+        "nombre": "Producto 7",
+        "precio": 119.00,
+        "imagen": "ImagenesTaller/product3.jpg"
+    },
+    {
+        "nombre": "Producto 8",
+        "precio": 451.00,
+        "imagen": "ImagenesTaller/product4.jpg"
+    },
+    {
+        "nombre": "Producto 9",
+        "precio": 4.99,
+        "imagen": "ImagenesTaller/product2.jpg"
+    },
+    {
+        "nombre": "Producto 10",
+        "precio": 194.00,
+        "imagen": "ImagenesTaller/product3.jpg"
+    },
+    {
+        "nombre": "Producto 11",
+        "precio": 15.00,
+        "imagen": "ImagenesTaller/product4.jpg"
+    },
+    {
+        "nombre": "Producto 12",
+        "precio": 25.00,
+        "imagen": "ImagenesTaller/product5.jpg"
+    }
+]

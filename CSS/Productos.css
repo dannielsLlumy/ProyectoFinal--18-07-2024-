@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px; 
+}
+
+.red-separator {
+    height: 25px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.titulo-tienda-wrapper {
+    background: url('ImagenesTaller/fondo-tienda.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 10px 0; 
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.card-body.text-center {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.add-to-cart {
+    background-color: #ff5733;
+    border: none;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #c44520;
+}
+
+.fixed-top {
+    z-index: 1030;
+}
+
+#cart-count {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5733;
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+
+.tienda-online-title {
+    color: #ff5733;
+    font-weight: bold;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Footer y personalización con CSS */
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: dimgray;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: calc(20% - 10px);
+    padding: 0 10px; 
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.social-links img {
+    width: 60px; 
+    height: 30px; 
+    background: none; 
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start; 
+    }
+}
+
+/*Esto es para poder establecer algún color de fondo y para que la barra de navegación te siga*/
+
+.mi-navbar {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+/*Algún estilo para la barra de navegación fija*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Ajuste del contenido para que no quede oculto detrás de la barra de navegación*/
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}

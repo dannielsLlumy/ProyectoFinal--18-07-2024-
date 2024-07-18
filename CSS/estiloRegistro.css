@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    width: 100%;
+    max-width: 400px;
+    background-color: darksalmon;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-content h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: blanchedalmond;
+    position: relative;
+}
+
+.form-content h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background-color: cornflowerblue;
+    margin: 5px 0;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: antiquewhite;
+}
+
+input::placeholder{
+    color: antiquewhite;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: chartreuse;
+}
+
+form p{
+    color: blanchedalmond;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    color: darkgreen;
+    margin-left: 5px;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: aqua;
+    color: beige;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    height: 250px;
+}
+
+.btn-field button.disable{
+    background-color: blanchedalmond;
+    color: dimgrey;
+}
+
+
+/* Footer y personalización con CSS */
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: dimgray;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: calc(20% - 10px); /* Ajusta el ancho con margen entre columnas */
+    padding: 0 10px; /* Ajusta el espaciado interno */
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las imágenes se envuelvan si no caben */
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.social-links img {
+    width: 60px; /* Ajusta el tamaño según lo necesario */
+    height: 30px; /* Ajusta el tamaño según lo necesario */
+    background: none; /* Elimina el círculo de fondo */
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start; /* Alinea las imágenes de redes sociales a la izquierda */
+    }
+}
+
+/*Esto es para poder establecer algún color de fondo y para que la barra de navegación te siga*/
+
+.mi-navbar {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+/*Algún estilo para la barra de navegación fija*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Ajuste del contenido para que no quede oculto detrás de la barra de navegación*/
+
+#cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+ /* Bloque rojo separador */
+ .red-separator {
+    height: 15px;
+    background-color: red;
+    width: 100%;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Productos.css">
+    <title>Tienda Online Tia</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-aquamarine">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="ImagenesTaller/1200px-Tia_Supermarket-Logo.svg.png" alt="logo" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <em><b>"Calidad, Variedad y Economía"</b></em>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuienesSomos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ProductosTia.html"><b><em>Productos</em></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrateConTia.html">Regístrate</a>
+                    </li>
+                </ul>
+                <!-- Icono del Carrito -->
+                <a href="#" class="nav-link position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <img src="ImagenesTaller/Carrito de compras.png" alt="Carrito" width="30" height="30">
+                    <span id="cart-count" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--- "BLOQUE ROJO SEPARADOR" --->
+    <div class="red-separator"></div>
+
+    <!-- Productos -->
+    <div class="container mt-5 pt-5">
+        <div class="titulo-tienda-wrapper">
+            <h1 class="text-center mb-5 tienda-online-title">TIENDA ONLINE</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Gafas realidad virtual.jpg" class="card-img-top" height="275px" alt="Producto 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gafas VR Fiyapoo 3D</h5>
+                        <p class="card-text">$45.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 1" data-price="10">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Impresora todo en uno HP.png" class="card-img-top" height="275px" alt="Producto 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Impresora Multifuncional HP Deskjet 2774</h5>
+                        <p class="card-text">$189.99</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 2" data-price="15">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Parlante amplificado england sound.jpg" class="card-img-top" height="275px" alt="Producto 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Parlante Amplificado England-Sound Rojo</h5>
+                        <p class="card-text">$225.99</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 3" data-price="20">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Refrigeradora.jpg" class="card-img-top" height="275px" alt="Producto 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Refrigerador con freezer Mabe RME1436JMX </h5>
+                        <p class="card-text">$325.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 4" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Smart TV LG 65.jpg" class="card-img-top" height="275px" alt="Producto 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">LG TV LED 65" SMART TV 4K THINQ AI </h5>
+                        <p class="card-text">$750.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 5" data-price="30">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Armario 4 cajones.jpg" class="card-img-top" height="275px" alt="Producto 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Armario ropero con 3 cajones y 4 puertas Ref Ar 01</h5>
+                        <p class="card-text">$325.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 6" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/colchon chaide.png" class="card-img-top" height="275px" alt="Producto 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Colchón Zafiro 29 CM</h5>
+                        <p class="card-text">$119.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 7" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Juego de Comedor.jpg" class="card-img-top" height="275px" alt="Producto 8">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Comedor de 4 Sillas Color Nogal</h5>
+                        <p class="card-text">$451.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 8" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Pañales.jpeg" class="card-img-top" height="275px" alt="Producto 9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pañalín Clásico</h5>
+                        <p class="card-text">$4.99</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 9" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/TECNO SPARK.jpg" class="card-img-top" height="275px" alt="Producto 10">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tecno Spark 20 PRO Verde 16GB-256GB</h5>
+                        <p class="card-text">$194.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 10" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/mini teclado gamer.jpeg" class="card-img-top" height="275px" alt="Producto 11">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Teclado RGB Gamer de una mano</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 11" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="ImagenesTaller/Pack de utiles escolares.jpg" class="card-img-top" height="275px" alt="Producto 12">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Paquete de suministros de regreso a la escuela</h5>
+                        <p class="card-text">$25.00</p>
+                        <button class="btn btn-primary add-to-cart" data-product="Producto 12" data-price="25">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- "BLOQUE ROJO SEPARADOR" --->
+    <div class="red-separator"></div>
+
+    <!-- Carrito Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul id="cart-items" class="list-group mb-3">
+                    <!-- Items del carrito se agregan aquí -->
+                </ul>
+                <h5>Total: $<span id="cart-total">0.00</span></h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button id="finalizar-compra-btn" type="button" class="btn btn-primary">Finalizar Compra</button>
+            </div>
+            <div id="mensaje-finalizacion" class="text-center mt-3"></div>
+        </div>
+    </div>
+</div>
+
+    <!--- "FOOTER DEL TIA" --->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>NUESTRA EMPRESA</h4>
+                    <ul>
+                        <li><a href="#">Oportunidades laborales</a></li>
+                        <li><a href="#">Nuestros productos</a></li>
+                        <li><a href="#">Nuestras Filiales</a></li>
+                        <li><a href="#">Ganadores</a></li>
+                        <li><a href="#">Novedades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>POLÍTICAS</h4>
+                    <ul>
+                        <li><a href="#">Términos y condiciones de uso</a></li>
+                        <li><a href="#">Política de privacidad y tratamiento de datos</a></li>
+                        <li><a href="#">Término y condiciones de promociones</a></li>
+                        <li><a href="#">Resoluciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>SERVICIO AL CLIENTE</h4>
+                    <ul>
+                        <li><a href="#">Contáctate con nosotros</a></li>
+                        <li><a href="#">Garantías, cambios y devoluciones</a></li>
+                        <li><a href="#">Servicio técnico autorizado</a></li>
+                        <li><a href="#">Costos de envío</a></li>
+                        <li><a href="#">Facturas Electrónicas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>CLUB MÁS</h4>
+                    <ul>
+                        <li><a href="#">Consulta tus puntos Más</a></li>
+                        <li><a href="#">Como funciona</a></li>
+                        <li><a href="#">Ventajas del Club Más</a></li>
+                        <li><a href="#">Solicitud de ingreso al Club Más</a></li>
+                        <li><a href="#">Conoce aun Más del Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>TIENDA ONLINE</h4>
+                    <ul>
+                        <li><a href="#">Cobertura</a></li>
+                        <li><a href="#">Garántia</a></li>
+                        <li><a href="#">Promos/Bombazos</a></li>
+                        <li><a href="#">Descuentazos</a></li>
+                        <li><a href="#">Asistente virtual Lucía</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>REDES SOCIALES</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Tiaec/?locale=es_LA"><img src="ImagenesTaller/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/almacenestiaec/?hl=es"><img src="ImagenesTaller/Instagram.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/company/almacenestia/?originalSubdomain=ec"><img src="ImagenesTaller/LinkedIn.png" alt="LinkedIn"></a>
+                        <a href="https://x.com/TIAEC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="ImagenesTaller/Twitter.png" alt="Twitter"></a>
+                        <a href="https://www.youtube.com/channel/UCTQvYwX2S_ByhLiapmIp5Qg"><img src="ImagenesTaller/Youtube.png" alt="Youtube"></a>
+                        <a href="https://radios.com.ec/tia-ecuador/"><img src="ImagenesTaller/RadioTia.webp" alt="RadioTia"></a>
+                        <a href="https://issuu.com/tiaecuador"><img src="ImagenesTaller/IssuuTia.png" alt="IssuuTia"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="Javascript/ProductosNuevo.js"></script>
+</body>
+</html>

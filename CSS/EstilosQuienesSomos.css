@@ -1,0 +1,189 @@
+ /* Bloque rojo separador */
+.red-separator {
+    height: 15px;
+    background-color: red;
+    width: 100%;
+}
+
+.container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.centered-text {
+    color: #333; 
+    font-size: 30px; 
+    font-weight: bold; 
+}
+
+.underline {
+    width: 1150px; 
+    height: 2px; 
+    background-color: red; 
+    margin: 10px auto; 
+}
+
+.underline-1 {
+    width: 200px; 
+    height: 2px; 
+    background-color: red; 
+    margin: 10px auto; 
+}
+
+.text-container {
+    max-width: 1500px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    text-align: left; 
+}
+
+.text-container-1 {
+    max-width: 1500px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    text-align: right; 
+}
+
+.text-container p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+}
+
+ /* Imagén al lado derecho del texto */
+.image-caption {
+    font-size: 14px; 
+    color: #555; 
+}
+
+.underline-2 {
+    width: 520px; 
+    height: 2px; 
+    background-color: red; 
+    margin: 25px auto; 
+}
+
+.underline-3 {
+    width: 520px; 
+    height: 2px; 
+    background-color: red; 
+    margin: 25px auto; 
+}
+
+.underline-4 {
+    width: 520px; 
+    height: 2px; 
+    background-color: red; 
+    margin: 25px auto; 
+}
+
+/* Footer y personalización con CSS */
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer {
+    background-color: dimgray;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.footer-links {
+    width: calc(20% - 10px); 
+    padding: 0 10px; 
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+    display: inline-block;
+    padding: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+    
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: aliceblue;
+    padding-left: 6px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.social-links img {
+    width: 60px; 
+    height: 30px; 
+    background: none; 
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        justify-content: flex-start; 
+    }
+}
+
+/*Esto es para poder establecer algún color de fondo y para que la barra de navegación te siga*/
+
+.mi-navbar {
+    background-color: whitesmoke;
+}
+
+nav {
+    background-color: whitesmoke;
+}
+
+/*Algún estilo para la barra de navegación fija*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*Ajuste del contenido para que no quede oculto detrás de la barra de navegación*/
+
+body {
+    padding-top: 70px; 
+}
